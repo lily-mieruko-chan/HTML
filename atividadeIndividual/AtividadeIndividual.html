@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout Corrigido</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background-color: rgb(255, 255, 255); /* corrigido */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .box1 {
+      background-color: rgb(137, 191, 214);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 45vw;
+      height: 100vh;
+    }
+
+    .box2 {
+      background-color: white;
+    }
+
+    .box3 {
+      background-color: rgb(217, 235, 243);
+      width: 300px;
+      height: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+      border-radius: 2px;
+
+      position: absolute;
+      top: 50%;
+      left: 40%; /* Ajuste para centralizar mais à esquerda */
+      transform: translate(-50%, -50%);
+    }
+
+    .box4 {
+      background-color: rgb(255, 255, 255);
+      width: 300px;
+      height: 45px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 2px;
+
+      position: absolute;
+      top: 93%;
+      left: 50%; /* Ajuste para centralizar mais à esquerda */
+      transform: translate(-50%, -50%);
+    }
+
+    #nome{
+        position: absolute;
+        top: 69%;
+        left: 10%; 
+  
+    }
+    #mulher{
+        position: absolute;
+        top: 8%;
+        left: 22%; 
+        border-radius: 100%;
+  
+    }
+    #whatsapp{
+        position: absolute;
+        top: 8%;
+        left: 15%; 
+        border-radius: 100%;
+        opacity: 0.7;
+  
+    }
+    #instagram{
+        position: absolute;
+        top: 13%;
+        left: 35%; 
+        border-radius: 100%;
+        opacity: 0.7;
+  
+    }
+    #X{
+        position: absolute;
+        top: 8%;
+        left: 53%; 
+        border-radius: 100%;
+        opacity: 0.7;
+    }
+    #Linkedin{
+        position: absolute;
+        top: 8%;
+        left: 70%; 
+        border-radius: 100%;
+        opacity: 0.7;
+  
+    }
+    #titulo{
+      font-size: 115%;
+      position: absolute;
+      top: 22.5%;
+      left: 55%; 
+      border-radius: 100%;
+    }
+    #bio{
+      position: absolute;
+      top: 34%;
+      left: 55%; 
+      border-radius: 100%;
+    }
+    #interesse{
+      position: absolute;
+      top: 45%;
+      left: 55%; 
+      border-radius: 100%;
+    }
+    button{
+      width: 100px;
+      height: 35px;
+      background-color:  rgb(217, 235, 243) ;
+      border: 0px solid  white;
+
+    }
+   
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box1">
+      <div class="box3">
+          <img id="mulher" src="https://static.wixstatic.com/media/11062b_a39c13c35bd449d4a269b30e9223e2be~mv2_d_7000_4667_s_4_2.jpg/v1/crop/x_1048,y_0,w_3331,h_4667/fill/w_394,h_552,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Frau%20in%20wei%C3%9Fer%20Bluse.jpg"
+                    alt="mulher" style="width: 170px;" height="210px">
+        <p id="nome"><strong>Maria Eduarda da Silva Pereira</strong></p>
+        <div class="box4">
+
+                    <div id="redes_sociais">
+                        <a href="https://web.whatsapp.com/">
+                             <img id="whatsapp" src="https://logodownload.org/wp-content/uploads/2015/04/Whatsapp-logo-vetor.png"
+                             alt="whatsapp" style="width: 52px;" height=" 40px">
+                        </a>
+                    </div>
+
+                    <div id="redes_sociais">
+                         <a href="https://www.instagram.com/">
+                             <img id="instagram" src="https://i.pinimg.com/originals/e8/00/48/e80048be84cfe35cc89dda88c1fd647c.png"
+                             alt="instagram" style="width:  34px;" height=" 34px">
+                        </a>
+                    </div>
+                    
+                    <div id="redes_sociais">
+                        <a href="https://x.com/">
+                             <img id="X" src="https://img.freepik.com/vetores-premium/x-nova-rede-social-icone-redondo-em-preto-e-branco-do-aplicativo-twitter-renomeado-como-logotipo-do-x-twitter-alterado_277909-595.jpg"
+                             alt="X" style="width:  40px;" height=" 40px">
+                        </a>
+                    </div>
+
+                    <div id="redes_sociais">
+                         <a href="https://www.linkedin.com/login/pt">
+                             <img id="Linkedin" src="https://i.pinimg.com/736x/96/8e/a6/968ea62882943e88bbd318ae5fa67429.jpg"
+                             alt="Linkedin" style="width:  40px;" height=" 40px">
+                        </a>
+                    </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="box2">
+
+      <div>
+        <h1><p id="titulo">Sobre mim!</p></h1>
+        <div id="bio">
+
+           <p>19 Anos/Gaspar<br>
+           IFSC-Análise e Desenvolvimento de Sistemas<br>
+           Estagiária-Philips<br></p>
+
+        </div>
+
+        <div id="interesse">
+
+          <p><strong>Hobbies e Interesses</strong><br> 
+            <br>
+            Ler <br>
+            Desenhar<br>
+            Pintar<br>
+            Escutar musicas<br>
+            Assistir serie<br>
+          </p>
+
+          <div >
+            <button>Contato</button>
+          </div>
+
+
+          
+        </div>
+
+      </div>
+   
+    </div>
+  </div>
+</body>
+</html>
