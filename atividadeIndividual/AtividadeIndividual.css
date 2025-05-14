@@ -1,0 +1,139 @@
+body {
+      margin: 0;
+      min-height: 100vh;
+      background-color: rgb(255, 255, 255); /* corrigido */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .box1 {
+      background-color: rgb(137, 191, 214);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 45vw;
+      height: 100vh;
+    }
+
+    .box2 {
+      background-color: white;
+      
+    }
+
+    .box3 {
+      background-color: rgb(217, 235, 243);
+      width: 300px;
+      height: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+      border-radius: 2px;
+
+      position: absolute;
+      top: 50%;
+      left: 40%; /* Ajuste para centralizar mais à esquerda */
+      transform: translate(-50%, -50%);
+    }
+
+    .box4 {
+      background-color: rgb(255, 255, 255);
+      width: 300px;
+      height: 45px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 2px;
+
+      position: absolute;
+      top: 93%;
+      left: 50%; /* Ajuste para centralizar mais à esquerda */
+      transform: translate(-50%, -50%);
+    }
+
+    #nome{
+        position: absolute;
+        top: 69%;
+        left: 10%; 
+  
+    }
+    #mulher{
+        position: absolute;
+        top: 8%;
+        left: 22%; 
+        border-radius: 100%;
+  
+    }
+    #whatsapp{
+        position: absolute;
+        top: 8%;
+        left: 15%; 
+        border-radius: 100%;
+        opacity: 0.6;
+  
+    }
+    #instagram{
+        position: absolute;
+        top: 13%;
+        left: 35%; 
+        border-radius: 100%;
+        opacity: 0.6;
+  
+    }
+    #X{
+        position: absolute;
+        top: 8%;
+        left: 53%; 
+        border-radius: 100%;
+        opacity: 0.6;
+    }
+    #Linkedin{
+        position: absolute;
+        top: 8%;
+        left: 70%; 
+        border-radius: 100%;
+        opacity: 0.6;
+  
+    }
+    #titulo{
+      font-size: 115%;
+      position: absolute;
+      top: 22.5%;
+      left: 55%; 
+      border-radius: 100%;
+    }
+    #bio{
+      position: absolute;
+      top: 34%;
+      left: 55%; 
+      border-radius: 100%;
+    }
+    #interesse{
+      position: absolute;
+      top: 45%;
+      left: 55%; 
+      border-radius: 100%;
+    }
+    button{
+      width: 100px;
+      height: 35px;
+      background-color:  rgb(217, 235, 243) ;
+      border: 0px solid  white;
+      border-radius: 10px;
+
+    } 
+    button:hover{
+       background-color:  rgb(155, 205, 226);
+    }
+   

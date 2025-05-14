@@ -4,61 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Layout Corrigido</title>
+    <link rel="stylesheet" href="formulario.css">
+
   <style>
-    body {
-      margin: 0;
-      min-height: 100vh;
-      background-color: rgb(255, 255, 255); /* corrigido */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: Arial, sans-serif;
-    }
-
-    .container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      width: 100vw;
-      height: 100vh;
-    }
-
-    .box1 {
-      background-color: rgb(137, 191, 214);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 45vw;
-      height: 100vh;
-    }
-
-    .box2 {
-      background-color: white;
-    }
-
-    .box3 {
-      background-color: rgb(217, 235, 243);
-      width: 300px;
-      height: 350px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
-      border-radius: 2px;
-
-      position: absolute;
-      top: 50%;
-      left: 40%; /* Ajuste para centralizar mais à esquerda */
-      transform: translate(-50%, -50%);
-    }
-    #titulo{
-      font-size: 120%;
-      position: absolute;
-      top: 36%;
-      left: 55%; 
-      border-radius: 100%;
-    }
-
 
   </style>
 </head>
@@ -66,16 +14,31 @@
   <div class="container">
     <div class="box1">
       <div class="box3">
-          
+      
+               <h1><p id="titulo">Contate-me!</p></h1>
+       
+             <form action="https://google.com" method="POST">
+
+                <label for ="name"></label>
+                <input id="nome"type="text" placeholder=" Nome">
+               
+                <label for ="email"></label>
+                <input id="email"type="text" placeholder=" Email">
+                
+                <label for ="objetivo"></label>
+                <input id="objetivo"type="text" placeholder=" Objetivo">
+               
+                <textarea id="menssagem" placeholder=" Mensagem" rows="5" cols="34"></textarea>
+                
+                <input id="enviar" type="submit" value="Enviar">
+
+            </form>
+            <a href="http://127.0.0.1:5500/atividadeIndividual/AtividadeIndividual.html"><button id="voltar">Voltar</button></a>
+
         </div>
       </div>
     </div>
     <div class="box2">
-
-         <div id="bio">
-               <h1><p id="titulo">Contate-me!</p></h1>
-         </div>
-
     </div>
 
       </div>
@@ -84,3 +47,4 @@
   </div>
 </body>
 </html>
+
